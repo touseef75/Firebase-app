@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdns -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-auth.js"></script>
+    <!-- Firebase database Stores values -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-database.js"></script>
+    <!-- FireBase Storage Used To Upload Files To our database -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-storage.js"></script>
+    <!-- style link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="login-box">
+        <div class="left">
+            <h1>Sign up</h1>
+    
+            <input id="name" type="text" name="username" placeholder="Username" />
+            <input id="email" type="text" name="email" placeholder="E-mail" />
+            <input id="password" type="password" name="password" placeholder="Password" />
+    
+            <input id="signup" type="submit" name="signup_submit" value="Sign me up" />
+        </div>
+    
+        <div class="right">
+            <span class="loginwith">  Sign in with<br />social network</span>
+    
+            <button class="social-signin facebook">Log in with facebook</button>
+            <button class="social-signin twitter">Log in with Twitter</button>
+            <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
